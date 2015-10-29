@@ -19,8 +19,12 @@
   <!-- use block quotes for spacing (can be nested) -->
   <xsl:template match="blockquote">
     <w:p>
-      <w:r></w:r>
+        <w:pPr>
+            <w:pStyle w:val="Quote"/>
+        </w:pPr>
+        
+        <xsl:call-template name="text-alignment" />
+        <xsl:apply-templates />
     </w:p>
-    <xsl:apply-templates/>
   </xsl:template>
 </xsl:stylesheet>

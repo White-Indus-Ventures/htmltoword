@@ -122,7 +122,7 @@
     <xsl:param name="global_level" />
     <w:p>
       <w:pPr>
-        <w:pStyle w:val="ListParagraph"></w:pStyle>
+        <w:pStyle w:val="ListBullet"></w:pStyle>
         <w:numPr>
           <w:ilvl w:val="{$local_level - 1}"/>
           <w:numId w:val="{$global_level}"/>
