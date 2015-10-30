@@ -70,8 +70,12 @@
     </w:r>
   </xsl:template>
 
-  <xsl:template match="pre">
+  <xsl:template match="body/pre|pre">
     <w:p>
+      <w:pPr>
+        <w:pStyle w:val="code"/>
+      </w:pPr>
+      <xsl:call-template name="text-alignment" />
       <xsl:apply-templates />
     </w:p>
   </xsl:template>
