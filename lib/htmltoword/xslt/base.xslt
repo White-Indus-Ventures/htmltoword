@@ -249,7 +249,7 @@
         </xsl:if>
         <xsl:if test="ancestor::s or ancestor::del or ancestor::strike">
           <w:rPr>
-            <w:u w:val="strike"/>
+            <w:strike w:val="1"/>
           </w:rPr>
         </xsl:if>
         <w:t xml:space="preserve"><xsl:value-of select="."/></w:t>
