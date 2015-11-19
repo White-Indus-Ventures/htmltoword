@@ -247,6 +247,11 @@
             <w:u w:val="single"/>
           </w:rPr>
         </xsl:if>
+        <xsl:if test="ancestor::s or ancestor::del or ancestor::strike">
+          <w:rPr>
+            <w:u w:val="strike"/>
+          </w:rPr>
+        </xsl:if>
         <w:t xml:space="preserve"><xsl:value-of select="."/></w:t>
       </w:r>
     </xsl:if>
